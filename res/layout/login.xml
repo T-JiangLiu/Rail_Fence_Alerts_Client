@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TableLayout android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:stretchColumns="1">
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/username"/>
+            <EditText android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:id="@+id/username"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/password"/>
+            <EditText android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:id="@+id/password"
+    			android:password="true"/>
+        </TableRow>
+        <TableRow android:gravity="right">
+            <Button android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:id="@+id/registerButton"
+    			android:text="注册"></Button>
+            <Button android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:id="@+id/loginButton"
+    			android:text="登录"></Button>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

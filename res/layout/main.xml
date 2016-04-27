@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前报警信息"
+        android:textSize="20px"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/textview_border"
+        android:textSize="20sp"
+        android:layout_marginBottom="25dip"
+    	android:id="@+id/textView"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="报警历史记录"
+        android:textSize="20px"/>
+	<ScrollView android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@drawable/textview_border"
+    	android:id="@+id/scrollView">
+	    <TextView android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="20sp"
+    		android:id="@+id/text"/>
+	</ScrollView>
+</LinearLayout>
